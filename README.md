@@ -24,7 +24,7 @@ npm run dev
 ## Release
 To build for production, first run `npm run build`.
 
-The output directory, `build/web/` contains a `package.json` pointing to the built
+The output directory, `build` contains a `package.json` pointing to the built
 application, and can be run as follows:
 
 ```bash
