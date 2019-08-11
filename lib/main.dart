@@ -29,6 +29,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
+        onPressed: (){},
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
