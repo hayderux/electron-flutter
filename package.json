@@ -4,7 +4,7 @@
   "description": "A minimal Electron application with flutter & dart",
   "main": "web/main.js",
   "scripts": {
-    "build": "npm run icons && pub run build_runner build --config=release -o build",
+    "build": "npm run dev && pub run build_runner build --config=release -o build",
     "build_runner_serve": "pub run build_runner serve --hot-reload",
     "dev": "run-p \"build_runner_serve\" \"start\"",
     "start": "electron ."
