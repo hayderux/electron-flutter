@@ -7,7 +7,7 @@ A minimal Electron application with flutter & dart
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start-typescript
+git clone https://github.com/hayderux/electron-quick-start-flutter
 # Go into the repository
 cd electron-quick-start-flutter
 #install flutter dependencies
