@@ -28,7 +28,7 @@ The output directory, `build/web/` contains a `package.json` pointing to the bui
 application, and can be run as follows:
 
 ```bash
-cd build/web
+cd build
 npm install
 npm start
 ```
