@@ -32,7 +32,7 @@ cd build
 npm install
 npm start
 ```
-##Package
+## Package
 The output directory's package manifest, build/package.json, includes electron-packager, and therefore can be packaged for distribution on Windows, MacOS, and Linux.
 
 run [npm run build]to build for the host platform.
