@@ -11,7 +11,7 @@ git clone https://github.com/hayderux/electron-quick-start-flutter
 # Go into the repository
 cd electron-quick-start-flutter
 #install flutter dependencies
-pub get
+flutter pub get
 # Install dependencies
 npm install
 # Run the app
