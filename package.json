@@ -5,8 +5,8 @@
   "main": "debug.js",
   "scripts": {
     "build": "webdev build",
-    "build_runner_serve": "pub run build_runner serve --hot-reload",
-    "dev": "run-p \"build_runner_serve\" \"start\"",
+    "build_flutter_server": "flutter run --web-port 8080 -d web-server",
+    "dev": "run-p \"build_flutter_server\" \"start\"",
     "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
