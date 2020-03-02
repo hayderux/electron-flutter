@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
             ),
             Text(
               'Flutter in electron, with hot reload!',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20,),
             )
           ],
         ),
