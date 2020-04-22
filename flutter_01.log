@@ -1,0 +1,84 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --web-port 960414 -d web-server
+
+## exception
+
+ArgumentError: Invalid argument(s): Invalid port 960414
+
+```
+#0      _throwOnBadPort (dart:io-patch/socket_patch.dart:120:5)
+#1      _RawServerSocket.bind (dart:io-patch/socket_patch.dart:1392:5)
+#2      _ServerSocket.bind (dart:io-patch/socket_patch.dart:1676:29)
+#3      ServerSocket._bind (dart:io-patch/socket_patch.dart:1667:26)
+#4      ServerSocket.bind (dart:io/socket.dart:382:27)
+#5      _HttpServer.bind (dart:_http/http_impl.dart:2732:25)
+#6      HttpServer.bind (dart:_http:230:19)
+#7      WebAssetServer.start (package:flutter_tools/src/build_runner/devfs_web.dart:140:54)
+<asynchronous suspension>
+#8      WebDevFS.create (package:flutter_tools/src/build_runner/devfs_web.dart:626:43)
+#9      _ResidentWebRunner.run.<anonymous closure> (package:flutter_tools/src/build_runner/resident_web_runner.dart:432:44)
+<asynchronous suspension>
+#10     _ResidentWebRunner.run.<anonymous closure> (package:flutter_tools/src/build_runner/resident_web_runner.dart)
+#11     asyncGuard.<anonymous closure> (package:flutter_tools/src/base/async_guard.dart:111:32)
+#12     _rootRun (dart:async/zone.dart:1184:13)
+#13     _CustomZone.run (dart:async/zone.dart:1077:19)
+#14     _runZoned (dart:async/zone.dart:1619:10)
+#15     runZonedGuarded (dart:async/zone.dart:1608:12)
+#16     runZoned (dart:async/zone.dart:1536:12)
+#17     asyncGuard (package:flutter_tools/src/base/async_guard.dart:109:3)
+#18     _ResidentWebRunner.run (package:flutter_tools/src/build_runner/resident_web_runner.dart:412:20)
+#19     _rootRunUnary (dart:async/zone.dart:1192:38)
+#20     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#21     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#22     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#23     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#24     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#25     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:556:7)
+#26     _rootRun (dart:async/zone.dart:1184:13)
+#27     _CustomZone.run (dart:async/zone.dart:1077:19)
+#28     _CustomZone.runGuarded (dart:async/zone.dart:979:7)
+#29     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1019:23)
+#30     _microtaskLoop (dart:async/schedule_microtask.dart:43:21)
+#31     _startMicrotaskLoop (dart:async/schedule_microtask.dart:52:5)
+#32     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#33     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel dev, v1.18.0-dev.5.0, on Microsoft Windows [Version 10.0.18363.778], locale en-US)
+    • Flutter version 1.18.0-dev.5.0 at C:\flutter
+    • Framework revision 7f56b53de4 (10 days ago), 2020-04-12 12:00:01 -0400
+    • Engine revision beb8a7ec48
+    • Dart version 2.8.0 (build 2.8.0-dev.20.0 89b0f67261)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at C:\Users\Hayde\AppData\Local\Android\sdk
+    • Platform android-29, build-tools 29.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[!] Android Studio (version 3.6)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+
+[✓] VS Code (version 1.44.2)
+    • VS Code at C:\Users\Hayde\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.9.1
+
+[✓] Connected device (2 available)
+    • Chrome     • chrome     • web-javascript • Google Chrome 80.0.3987.163
+    • Web Server • web-server • web-javascript • Flutter Tools
+
+! Doctor found issues in 1 category.
+```

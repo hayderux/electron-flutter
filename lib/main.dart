@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: (){},
+        onPressed: () {},
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -55,13 +55,6 @@ class MyHomePage extends StatelessWidget {
               'Hello, World!',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
-              height: 40,
-            ),
-            Text(
-              'Flutter in electron, with hot reload!',
-              style: TextStyle(fontSize: 20,),
-            )
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
