@@ -22,7 +22,7 @@ npm run dev
 
  
 ## Release
-To build for production, run `release`
+To build for production, run `npm run release`
 
 
 ## Package
