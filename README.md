@@ -22,22 +22,15 @@ npm run dev
 
  
 ## Release
-To build for production, first run `npm run build`.
+To build for production, run `release`
 
-The output directory, `build` contains a `package.json` pointing to the built
-application, and can be run as follows:
 
-```bash
-cd build
-npm install
-npm start
-```
 ## Package
-The output directory's package manifest, build/package.json, includes electron-packager, and therefore can be packaged for distribution on Windows, MacOS, and Linux.
+The output directory's package manifest, `build/web/package.json`, includes electron-packager, and therefore can be packaged for distribution on Windows, MacOS, and Linux.
 
 to build for the host platform run:
 ``` 
-npm run build
+npm run release
 ```
 To build for all platforms, run :
 
