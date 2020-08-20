@@ -7,10 +7,12 @@
     "clean": "flutter clean",
     "build:flutter": "flutter build web",
     "build:electron": "cd build/web && npm run build",
+    "build:package":"cd build/web && npm run package",
     "flutter_server": "flutter run --web-port 8096 -d web-server",
     "dev": "run-p flutter_server start",
     "start": "electron .",
-    "test": "run-s build:flutter build:electron"
+    "release": "run-s build:flutter build:electron",
+    "package":"run-s build:flutter build:package"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "author": "GitHub",
